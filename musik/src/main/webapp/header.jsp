@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
 <div class="wrapper">
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -6,13 +8,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.jsp">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Page1</a>
+                            <a class="nav-link" href="#">Фонотека</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Page2</a>
+                            <a class="nav-link" href="#">Поиск</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Войти</a>
                         </li>
                     </ul>
                 </div>
