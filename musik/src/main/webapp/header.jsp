@@ -1,7 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-
-<div class="wrapper">
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container">
@@ -27,4 +25,3 @@
             </div>
         </nav>
     </header>
-</div>

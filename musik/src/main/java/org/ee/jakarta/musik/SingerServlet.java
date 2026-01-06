@@ -11,7 +11,8 @@ import org.ee.jakarta.musik.dao.SingerDao;
 import org.ee.jakarta.musik.db.DBConnect;
 import org.ee.jakarta.musik.entity.Singer;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(value = {"/index", "/home", ""}, // обработка нескольких URL
+        loadOnStartup = 1)
 public class SingerServlet extends HttpServlet {
     private SingerDao singerDao;
 
@@ -23,7 +24,7 @@ public class SingerServlet extends HttpServlet {
         try {
             List<Singer> artists = singerDao.getAllSingers();
             request.setAttribute("artists", artists);
-            request.getRequestDispatcher("/artists.jsp").forward(request, response);
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         } catch (SQLException e) {
             throw new ServletException("Ошибка получения данных", e);
         }

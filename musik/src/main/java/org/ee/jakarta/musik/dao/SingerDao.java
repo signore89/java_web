@@ -15,14 +15,15 @@ public class SingerDao {
 
     public List<Singer> getAllSingers() throws SQLException {
         List<Singer> artists = new ArrayList<>();
-        String sql = "SELECT Id, Name, UrlImg FROM Artists ORDER BY Name";
+        String sql = "SELECT \"Id\", \"Name\", \"UrlImg\" FROM \"Artists\" ORDER BY \"Name\"";
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
 
             while (rs.next()) {
                 Singer artist = new Singer();
                 artist.setId(rs.getInt("Id"));
-                artist.setName(rs.getString("Name"));
+                artist.setName(rs.getString("name"));
+                artist.setUrlImg(rs.getString("urlImg"));
                 artists.add(artist);
             }
         }
