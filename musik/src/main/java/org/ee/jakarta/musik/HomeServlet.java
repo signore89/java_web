@@ -13,7 +13,7 @@ import org.ee.jakarta.musik.entity.Singer;
 
 @WebServlet(value = {"/index", "/home", ""}, // обработка нескольких URL
         loadOnStartup = 1)
-public class SingerServlet extends HttpServlet {
+public class HomeServlet extends HttpServlet {
     private SingerDao singerDao;
 
     public void init() {

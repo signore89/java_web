@@ -18,7 +18,7 @@
                             <a class="nav-link" href="#">Регистрация</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Войти</a>
+                            <a class="nav-link" href="user_login.jsp">Войти</a>
                         </li>
                     </ul>
                 </div>
